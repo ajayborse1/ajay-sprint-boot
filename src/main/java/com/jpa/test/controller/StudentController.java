@@ -22,7 +22,7 @@ public class StudentController {
 	
 	@GetMapping("stuent/getStudent/{id}/{name}")
 	public ArrayList<Student> getStudent(@PathVariable("id") Integer id,@PathVariable("name") String name) {
-		
+		System.out.println("in student method");
 		return studentservice.getStudent(id , name);
 		
 	}
